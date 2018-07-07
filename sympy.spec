@@ -4,17 +4,19 @@
 #
 Name     : sympy
 Version  : 1.2rc1
-Release  : 1
+Release  : 2
 URL      : https://github.com/sympy/sympy/archive/sympy-1.2rc1.tar.gz
 Source0  : https://github.com/sympy/sympy/archive/sympy-1.2rc1.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
-License  : BSD-3-Clause
+License  : BSD-3-Clause MIT
 Requires: sympy-bin
 Requires: sympy-python3
 Requires: sympy-license
 Requires: sympy-man
 Requires: sympy-python
+Requires: mpmath
+BuildRequires : mpmath
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python3-dev
@@ -77,13 +79,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530984691
+export SOURCE_DATE_EPOCH=1530993552
 find -name "*pyx" | xargs touch ||:
 python3 setup.py build -b py3
 
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/sympy
+cp LICENSE %{buildroot}/usr/share/doc/sympy/LICENSE
+cp sympy/parsing/latex/LICENSE.txt %{buildroot}/usr/share/doc/sympy/sympy_parsing_latex_LICENSE.txt
 cp data/TeXmacs/LICENSE %{buildroot}/usr/share/doc/sympy/data_TeXmacs_LICENSE
 python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
@@ -99,7 +103,9 @@ echo ----[ mark ]----
 
 %files license
 %defattr(-,root,root,-)
+/usr/share/doc/sympy/LICENSE
 /usr/share/doc/sympy/data_TeXmacs_LICENSE
+/usr/share/doc/sympy/sympy_parsing_latex_LICENSE.txt
 
 %files man
 %defattr(-,root,root,-)
