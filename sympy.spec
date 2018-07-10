@@ -4,7 +4,7 @@
 #
 Name     : sympy
 Version  : 1.2rc1
-Release  : 2
+Release  : 3
 URL      : https://github.com/sympy/sympy/archive/sympy-1.2rc1.tar.gz
 Source0  : https://github.com/sympy/sympy/archive/sympy-1.2rc1.tar.gz
 Summary  : No detailed summary available
