@@ -4,7 +4,7 @@
 #
 Name     : sympy
 Version  : 1.3
-Release  : 4
+Release  : 5
 URL      : https://github.com/sympy/sympy/releases/download/sympy-1.3/sympy-1.3.tar.gz
 Source0  : https://github.com/sympy/sympy/releases/download/sympy-1.3/sympy-1.3.tar.gz
 Summary  : Computer algebra system (CAS) in Python
