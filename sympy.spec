@@ -4,7 +4,7 @@
 #
 Name     : sympy
 Version  : 1.8
-Release  : 22
+Release  : 23
 URL      : https://github.com/sympy/sympy/releases/download/sympy-1.8/sympy-1.8.tar.gz
 Source0  : https://github.com/sympy/sympy/releases/download/sympy-1.8/sympy-1.8.tar.gz
 Summary  : Computer algebra system (CAS) in Python
