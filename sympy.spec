@@ -4,7 +4,7 @@
 #
 Name     : sympy
 Version  : 1.8
-Release  : 28
+Release  : 29
 URL      : https://github.com/sympy/sympy/releases/download/sympy-1.8/sympy-1.8.tar.gz
 Source0  : https://github.com/sympy/sympy/releases/download/sympy-1.8/sympy-1.8.tar.gz
 Summary  : Computer algebra system (CAS) in Python
@@ -15,9 +15,9 @@ Requires: sympy-license = %{version}-%{release}
 Requires: sympy-man = %{version}-%{release}
 Requires: sympy-python = %{version}-%{release}
 Requires: sympy-python3 = %{version}-%{release}
-Requires: mpmath
+Requires: pypi(mpmath)
 BuildRequires : buildreq-distutils3
-BuildRequires : mpmath
+BuildRequires : pypi(mpmath)
 
 %description
 This directory contains SymPy example programs.
@@ -78,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1619280318
+export SOURCE_DATE_EPOCH=1641841864
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
