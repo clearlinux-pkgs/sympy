@@ -7,7 +7,7 @@
 #
 Name     : sympy
 Version  : 1.13.2
-Release  : 48
+Release  : 49
 URL      : https://github.com/sympy/sympy/releases/download/1.13.2/sympy-1.13.2.tar.gz
 Source0  : https://github.com/sympy/sympy/releases/download/1.13.2/sympy-1.13.2.tar.gz
 Summary  : Computer algebra system (CAS) in Python
